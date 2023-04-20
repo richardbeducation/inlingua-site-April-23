@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* global styles */
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.course,
+.teammate {
+  border: 15px solid white;
+  cursor: pointer;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 30px 30px;
+}
+
+nav,
+footer {
+  background-color: #0b0d17;
+}
+
+/* nav styles */
+nav {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  color: #fbfbfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #282b37;
+}
+
+img.logo {
+  height: 60px;
+  margin: 10px 0;
+  margin-left: 30px;
+}
+
+nav .links {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+nav button {
+  background-color: skyblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.burgermenu {
+  margin: auto;
+  margin-left: 10px;
+  display: none;
+}
+
+.burgermenu img {
+  height: 30px;
+  width: 40px;
+  padding: 10px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .links a {
+    display: none;
+  }
+  nav .burgermenu {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  nav button {
+    display: none;
+  }
+}
+
+/* header styles */
+header {
+  background-image: url('./resources/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+header h1 {
+  max-width: 800px;
+  margin: 60px;
+}
+
+/* courses styles */
+.featured-courses h2 {
+  margin: 70px 0 0 170px;
+}
+
+.courses {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#presentations {
+  background-image: url('./resources/How\ Good\ Are\ Your\ Presentation\ Skills-986683ce-bf70-45f6-b4ed-89cdfdeb8a33.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#reports {
+  background-image: url('./resources/report.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#culture {
+  background-image: url('./resources/culture.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#emails {
+  background-image: url('./resources/email.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#meetings {
+  background-image: url('./resources/meetings.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#workshops {
+  background-image: url('./resources/workshop-tr.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+/* client styles */
+
+/* footer styles */
